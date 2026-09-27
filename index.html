@@ -66,7 +66,6 @@
 <audio id="music" preload="auto" loop playsinline webkit-playsinline src="music.mp3"></audio>
 
 <script>
-const FALLBACK_AUDIO="https://fine.sunproxy.net/file/UnBlZ3IzQXMxQXJVOFlPdHFyVXUvbmJzMXkrUnduZkxycktkUzdCck5jTGwwQWFPYlFPZjR3RGJoZ3FrYWV5NDZpNHZZSzJSWW1hZGRJUFAzdFFjRlRtMWhVeGFsUmRPOVREMU9yTFlSbU09/Bon_Iver_St._Vincent_-_Roslyn_%28Rilds.net%29.mp3";
 const pics=[
 "https://images.unsplash.com/photo-1633530082667-13b518816210?auto=format&fit=crop&q=80&w=1400",
 "https://images.unsplash.com/photo-1769428840687-ec4d2c776230?auto=format&fit=crop&q=80&w=1400",
@@ -104,14 +103,14 @@ const slides=[
 ];
 const $=id=>document.getElementById(id), screens=["start","quiz","movie","fake","real"];
 const music=$("music"); music.volume=.82;
-let qi=0,picks=Array(10).fill(null),timer=null,si=0,audioFallbackTried=false;
+let qi=0,picks=Array(10).fill(null),timer=null,si=0;
 function show(id){screens.forEach(s=>$(s).classList.remove("on"));$(id).classList.add("on");scrollTo(0,0)}
 function playMusic(){
  const st=$("musicStatus");
  const p=music.play();
- if(p&&p.then)p.then(()=>{if(st)st.textContent="♫ Музыка играет";}).catch(()=>{if(!audioFallbackTried){audioFallbackTried=true;music.src=FALLBACK_AUDIO;music.load();music.play().then(()=>{if(st)st.textContent="♫ Музыка играет";}).catch(()=>{if(st)st.textContent="Нажми «Проверить музыку» ещё раз";});}});
+ if(p&&p.then)p.then(()=>{if(st)st.textContent="♫ Музыка играет";}).catch(()=>{if(st)st.textContent="Нажми кнопку музыки ещё раз";});
 }
-music.addEventListener("error",()=>{if(!audioFallbackTried){audioFallbackTried=true;music.src=FALLBACK_AUDIO;music.load();}});
+music.addEventListener("error",()=>{const st=$("musicStatus");if(st)st.textContent="Ошибка загрузки музыки";});
 function toggleMusic(){if(music.paused)playMusic();else music.pause()}
 function draw(){
  const q=qs[qi];$("qnum").textContent=(qi+1)+" / 10";$("theme").textContent=q[0];$("fill").style.width=((qi+1)*10)+"%";$("qtext").textContent=q[1];$("answers").innerHTML="";
