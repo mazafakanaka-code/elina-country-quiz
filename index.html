@@ -8,19 +8,20 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#090d11;color:#eef3f4;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{overflow-x:hidden;background:radial-gradient(circle at 80% 0,#2e424955,transparent 34%),linear-gradient(180deg,#11181e,#090d11 70%)}button{font:inherit}.app{min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 10px max(18px,env(safe-area-inset-bottom))}.screen{display:none;width:min(820px,100%)}.screen.on{display:block}.card{background:#111820e8;border:1px solid #ffffff17;border-radius:26px;box-shadow:0 28px 90px #0008;overflow:hidden;backdrop-filter:blur(16px)}.pad{padding:24px 17px}.hero{text-align:center;padding:38px 18px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;color:#c4d7db;font-weight:700}h1,h2{font-family:"Cormorant Garamond",Georgia,serif;line-height:.98;margin:8px 0 0}h1{font-size:clamp(48px,12vw,82px)}h2{font-size:clamp(34px,8vw,58px)}p{color:#b8c3ca;line-height:1.65}.hero p{max-width:58ch;margin:15px auto}.hero-img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:brightness(.72) saturate(.82)}.hero-wrap{position:relative;overflow:hidden;border-radius:20px;margin-top:22px}.hero-wrap:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0001,#0006)}.pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:18px 0}.pill{border:1px solid #ffffff17;background:#ffffff09;border-radius:999px;padding:9px 12px;font-size:13px}.btn{appearance:none;border:0;border-radius:999px;padding:14px 20px;font-weight:700;cursor:pointer;transition:.16s}.btn:active{transform:scale(.985)}.primary{background:linear-gradient(#dbe8eb,#a6bec4);color:#0a0e12;box-shadow:0 12px 26px #9bb3ba2c}.ghost{background:#ffffff0a;color:#eef3f4;border:1px solid #ffffff20}.wide{width:min(330px,100%)}.controls{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}.tiny{font-size:12px;color:#91a0a8;margin-top:12px}.top{display:flex;justify-content:space-between;color:#aeb9c0;font-size:13px}.bar{height:8px;background:#ffffff0d;border-radius:30px;overflow:hidden;margin:10px 0 18px}.fill{height:100%;background:linear-gradient(90deg,#91afb6,#dbe6e9);transition:.25s}.qtitle{font-size:clamp(32px,7vw,51px);margin-bottom:16px}.answers{display:grid;gap:10px}.answer{position:relative;min-height:145px;border:1px solid #ffffff18;border-radius:20px;overflow:hidden;background:#151b20;color:white;text-align:left;padding:0;cursor:pointer}.answer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45) saturate(.75);transition:.2s transform,.2s filter}.answer:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0001,#000c)}.answer .txt{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;height:145px;padding:15px}.answer b{font-size:15px}.answer span{font-size:12px;color:#d2d9dc;margin-top:5px;line-height:1.4}.answer:active img{transform:scale(1.025);filter:brightness(.52) saturate(.8)}.qactions{display:flex;gap:8px;margin-top:15px}.movie{position:relative;min-height:min(88dvh,930px);border-radius:26px;overflow:hidden;border:1px solid #ffffff18;box-shadow:0 28px 90px #000a}.movie img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.72) saturate(.82);transition:opacity 1s,transform 4.2s}.shade{position:absolute;inset:0;background:linear-gradient(180deg,#0000000e,#0006 48%,#000e)}.movieText{position:relative;z-index:2;min-height:min(88dvh,930px);display:flex;flex-direction:column;justify-content:flex-end;padding:25px 18px}.caption{font-size:16px;max-width:46ch}.mbar{height:4px;background:#ffffff2b;border-radius:30px;overflow:hidden;margin-top:16px}.mfill{height:100%;background:#e8f1f3;transition:.25s}.result{text-align:center;padding:34px 18px}.result p{max-width:55ch;margin:14px auto}.tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:17px}@media(min-width:680px){.pad{padding:30px}.answers{grid-template-columns:1fr 1fr}.answer,.answer .txt{min-height:180px;height:180px}.movieText{padding:34px 28px}}@media(max-width:520px){.btn{width:100%}.controls,.qactions{display:grid}.answer,.answer .txt{min-height:133px;height:133px}.card{border-radius:22px}.movie{border-radius:22px}}
+.result-photo{border-radius:18px;margin:0 0 24px;filter:none;aspect-ratio:16/10}.answer img{filter:brightness(.68) saturate(.95)}.place{font-style:normal;font-size:11px;color:#e8e8e8;margin-top:8px}.result>.btn{margin-top:24px}
 </style>
 </head>
 <body>
 <div class="app">
 <section id="start" class="screen on card">
-<img class="hero-img" src="https://images.unsplash.com/photo-1633530082667-13b518816210?auto=format&fit=crop&q=80&w=1600" alt="">
+<img class="hero-img" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=85&w=1400" alt="">
 <div class="hero">
 <div class="eyebrow">10 вопросов • один настоящий результат</div>
 <h1>Где тебе жить?</h1>
 <p>Климат, природа, ритм жизни и атмосфера. Отвечай интуитивно — в конце узнаешь свой город.</p>
 <div class="pills"><span class="pill">🌧️ климат</span><span class="pill">🌲 природа</span><span class="pill">🌫️ вайб</span><span class="pill">🏙️ город</span></div>
-<div class="controls"><button id="startBtn" class="btn primary wide">Начать тест</button><button id="soundStart" class="btn ghost">🔊 Проверить музыку</button></div>
-<div id="musicStatus" class="tiny">Музыка запустится после нажатия — так работает Safari на iPhone.</div>
+<div class="controls"><button id="startBtn" class="btn primary wide">Начать тест</button></div>
+
 </div>
 </section>
 
@@ -30,7 +31,7 @@
 <div class="bar"><div id="fill" class="fill"></div></div>
 <h2 id="qtext" class="qtitle"></h2>
 <div id="answers" class="answers"></div>
-<div class="qactions"><button id="back" class="btn ghost">Назад</button><button id="musicToggle" class="btn ghost">🔊 Музыка</button></div>
+<div class="qactions"><button id="back" class="btn ghost">Назад</button></div>
 </div>
 </section>
 
@@ -39,15 +40,16 @@
 <div class="shade"></div>
 <div class="movieText">
 <div class="eyebrow">результат найден</div>
-<h2>Но сначала — очевидная правда.</h2>
+<h2>Элина, тебе суждено жить в Форксе.</h2>
 <p id="slideCaption" class="caption"></p>
 <div class="controls"><button id="skip" class="btn ghost">Пропустить</button><button id="musicToggle2" class="btn ghost">🔊 Музыка</button></div>
+<div id="musicStatus" class="tiny" role="status"></div>
 <div class="mbar"><div id="mfill" class="mfill"></div></div>
 </div>
 </section>
 
 <section id="fake" class="screen card result">
-<div class="eyebrow">ну конечно же</div>
+<img class="hero-img result-photo" src="https://images.unsplash.com/photo-1633530082667-13b518816210?auto=format&fit=crop&q=80&w=1400" alt="Туманная дорога среди лесов — настроение Форкса"><div class="eyebrow">ну конечно же</div>
 <h2>Forks, Washington 🇺🇸</h2>
 <p>Какие бы ответы ни были — туман, мокрый асфальт, дождь и лес уже всё решили. Где-то рядом явно должна проехать машина Беллы.</p>
 <div class="tags"><span class="pill">🌲 лес</span><span class="pill">🌫️ туман</span><span class="pill">🌧️ дождяка</span><span class="pill">🖤 Twilight vibe</span></div>
@@ -55,7 +57,7 @@
 </section>
 
 <section id="real" class="screen card result">
-<div class="eyebrow">ладно, теперь честно</div>
+<img id="realPhoto" class="hero-img result-photo" alt=""><div class="eyebrow">ладно, теперь честно</div>
 <h2 id="realCity"></h2>
 <p id="realText"></p>
 <div id="realTags" class="tags"></div>
@@ -73,6 +75,20 @@ const pics=[
 "https://images.unsplash.com/photo-1738237610845-1773c2bc4500?auto=format&fit=crop&q=80&w=1400",
 "https://images.unsplash.com/photo-1768992363350-b1f5b6176239?auto=format&fit=crop&q=80&w=1400",
 "https://images.unsplash.com/photo-1678889284828-1aa77a845104?auto=format&fit=crop&q=80&w=1400"
+];
+const destinations={"moody":["1506377585622-bedcbb027afc","Эдинбург, Шотландия"],"coast":["1555881400-74d7acaacd8b","Порту, Португалия"],"sun":["1539037116277-4db20889f2d4","Барселона, Испания"],"classic":["1513622470522-26c3c8a854bc","Копенгаген, Дания"],"city":["1534351590666-13e3e96b5017","Амстердам, Нидерланды"],"paris":["1502602898657-3e91760cbb34","Париж, Франция"],"venice":["1514890547357-a9ee288728e0","Венеция, Италия"],"japan":["1493976040374-85c8e12f0c0e","Киото, Япония"]};
+const destinationPhoto=k=>"https://images.unsplash.com/photo-"+destinations[k][0]+"?auto=format&fit=crop&q=85&w=1400";
+const questionPhotos=[
+["moody","coast","sun","classic"],
+["moody","coast","paris","city"],
+["venice","coast","classic","japan"],
+["moody","venice","paris","city"],
+["moody","coast","paris","sun"],
+["moody","venice","classic","city"],
+["japan","coast","classic","sun"],
+["moody","venice","paris","sun"],
+["moody","coast","classic","city"],
+["moody","venice","japan","sun"]
 ];
 const qs=[
 ["Климат","Какой климат тебе ближе?",[["Прохладно, дождливо и туманно","Чтобы прям хотелось укутаться.","moody"],["Мягко и морской воздух","Без жары, но с водой рядом.","coast"],["Солнечно и тепло","Мне нужен свет и энергия.","sun"],["Четыре сезона","Хочу всё понемногу.","classic"]]],
@@ -106,27 +122,28 @@ const music=$("music"); music.volume=.82;
 let qi=0,picks=Array(10).fill(null),timer=null,si=0;
 function show(id){screens.forEach(s=>$(s).classList.remove("on"));$(id).classList.add("on");scrollTo(0,0)}
 function playMusic(){
+ if(!document.querySelector("#movie.on, #fake.on"))return;
  const st=$("musicStatus");
  const p=music.play();
  if(p&&p.then)p.then(()=>{if(st)st.textContent="♫ Музыка играет";}).catch(()=>{if(st)st.textContent="Нажми кнопку музыки ещё раз";});
 }
-music.addEventListener("error",()=>{const st=$("musicStatus");if(st)st.textContent="Ошибка загрузки музыки";});
+music.addEventListener("error",()=>{const st=$("musicStatus");if(st)st.textContent="Не удалось загрузить музыку. Нажми ♫, чтобы попробовать снова.";});
 function toggleMusic(){if(music.paused)playMusic();else music.pause()}
 function draw(){
  const q=qs[qi];$("qnum").textContent=(qi+1)+" / 10";$("theme").textContent=q[0];$("fill").style.width=((qi+1)*10)+"%";$("qtext").textContent=q[1];$("answers").innerHTML="";
- q[2].forEach((a,i)=>{const b=document.createElement("button");b.className="answer";const img=pics[(qi+i)%pics.length];b.innerHTML='<img src="'+img+'" alt=""><div class="txt"><b>'+a[0]+'</b><span>'+a[1]+'</span></div>';b.onclick=()=>pick(i);$("answers").appendChild(b)});
+ q[2].forEach((a,i)=>{const b=document.createElement("button");b.className="answer";const key=questionPhotos[qi][i],img=destinationPhoto(key);b.innerHTML='<img src="'+img+'" alt="'+destinations[key][1]+'"><div class="txt"><b>'+a[0]+'</b><span>'+a[1]+'</span><em class="place">'+destinations[key][1]+'</em></div>';b.onclick=()=>pick(i);$("answers").appendChild(b)});
  $("back").style.visibility=qi?"visible":"hidden";
 }
 function pick(i){picks[qi]=i;if(qi<9){qi++;draw()}else startMovie()}
-function result(){const s={moody:0,coast:0,sun:0,classic:0,city:0};picks.forEach((v,i)=>{if(v!==null)s[qs[i][2][v][2]]++});let k="classic",m=-1;Object.entries(s).forEach(([x,n])=>{if(n>m){k=x;m=n}});return res[k]}
+function result(){const s={moody:0,coast:0,sun:0,classic:0,city:0};picks.forEach((v,i)=>{if(v!==null)s[qs[i][2][v][2]]++});let k="classic",m=-1;Object.entries(s).forEach(([x,n])=>{if(n>m){k=x;m=n}});return {key:k,data:res[k]}}
 function setSlide(){const x=slides[si],im=$("slideImg");im.style.opacity=0;im.style.transform="scale(1.04)";setTimeout(()=>{im.src=x[0];$("slideCaption").textContent=x[1];requestAnimationFrame(()=>{im.style.opacity=1;im.style.transform="scale(1)"})},120);$("mfill").style.width=((si+1)/slides.length*100)+"%"}
-function startMovie(){show("movie");playMusic();si=0;setSlide();clearInterval(timer);timer=setInterval(()=>{si++;if(si>=slides.length)endMovie();else setSlide()},3300)}
+function startMovie(){show("movie");music.currentTime=0;playMusic();si=0;setSlide();clearInterval(timer);timer=setInterval(()=>{si++;if(si>=slides.length)endMovie();else setSlide()},3300)}
 function endMovie(){clearInterval(timer);show("fake")}
-$("startBtn").onclick=()=>{playMusic();show("quiz");draw()};
-$("soundStart").onclick=playMusic;$("musicToggle").onclick=toggleMusic;$("musicToggle2").onclick=toggleMusic;
+$("startBtn").onclick=()=>{music.pause();music.currentTime=0;show("quiz");draw()};
+$("musicToggle2").onclick=toggleMusic;
 $("back").onclick=()=>{if(qi){qi--;draw()}};
 $("skip").onclick=endMovie;
-$("realBtn").onclick=()=>{const r=result();$("realCity").textContent=r[0];$("realText").textContent=r[1];$("realTags").innerHTML=r[2].map(x=>'<span class="pill">'+x+'</span>').join("");show("real")};
+$("realBtn").onclick=()=>{music.pause();music.currentTime=0;const chosen=result(),r=chosen.data;$("realPhoto").src=destinationPhoto(chosen.key);$("realPhoto").alt=destinations[chosen.key][1];$("realCity").textContent=r[0];$("realText").textContent=r[1];$("realTags").innerHTML=r[2].map(x=>'<span class="pill">'+x+'</span>').join("");show("real")};
 $("again").onclick=()=>{clearInterval(timer);music.pause();music.currentTime=0;qi=0;picks=Array(10).fill(null);show("start")};
 </script>
 </body>
